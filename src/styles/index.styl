@@ -1,0 +1,112 @@
+@require 'cozy-ui/build'
+
+html {
+    --documentMaxWidth: 768px;
+    --documentMargin: 2rem;
+    --documentPadding: 2em;
+    --documentMarginColor: #F5F6F7;
+    --documentDividerColor: #D6D8DA;
+}
+@media (max-width: 800px) {
+    html {
+        --documentMaxWidth: 800px;
+        --documentMargin: 0;
+        --documentPadding: 0;
+        --documentMarginColor: var(--white);
+    }
+}
+
+// @stylint off
+.sto-app-back {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--slateGrey) !important;
+}
+
+.page-header-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center;
+}
+.page-header-menu--left {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.page-header-menu--right {
+  display: flex;
+  align-items: center;
+}
+
+html .doc-article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.doc-header-menu--editing {
+    margin-top: -0.5rem;
+}
+html .doc-title {
+    flex-grow: 1;
+    align-items: center;
+    margin: 0 0 0 0.5rem;
+}
+html .doc-title-input,
+html .doc-title-input:focus
+html .doc-title-input:hover {
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+    margin: 0.25rem 0
+    line-height: 1;
+    height: 3rem;
+    overflow: visible;
+}
+
+html .doc-editor-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+    margin-top: -2rem;
+}
+html .docs-list-container .page-header-menu {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.docs-list {
+    width: calc(100% - 20px);
+}
+.docs-list td, .docs-list th {
+    text-align: left;
+    color: var(--coolGrey);
+}
+.docs-list tr > th:first-child {
+    padding-left: 2rem;
+}
+.docs-list tr > td:last-child,
+.docs-list tr > th:last-child {
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.doc-item {
+    display: flex;
+    align-items: center;
+}
+.doc-icon {
+    margin-right: 1rem;
+}
+.doc-link {
+    text-decoration: none;
+    text-transform: none;
+    font-weight: normal;
+}
+
+// @stylint on
