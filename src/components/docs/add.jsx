@@ -10,7 +10,7 @@ import Button from 'cozy-ui/react/Button'
 
 import doctype from './doctype'
 
-import { createDocument, getEditUrl } from '../../lib/docserve'
+import { createDocument } from '../../lib/docserve'
 
 class Add extends Component {
   constructor(props, context) {
@@ -40,11 +40,14 @@ class Add extends Component {
     // create on document server
     const meta = await createDocument(id, button.dataset.ext)
     // create on instance's couchdb
-    const { data: doc } = await this.props.client.create(doctype, {_id: meta.file, ...meta} )
+    const { data: doc } = await this.props.client.create(doctype, {
+      _id: meta.file,
+      ...meta
+    })
     this.setState(() => ({
       isWorking: false
     }))
-    window.location = await getEditUrl(doc)
+    this.props.history.push(`/d/${doc.ext}/${doc.id}`)
   }
 
   render() {

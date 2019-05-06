@@ -8,6 +8,7 @@ import Icon from 'cozy-ui/transpiled/react/Icon'
 import Menu, { MenuButton } from 'cozy-ui/transpiled/react/MuiCozyTheme/Menus'
 import MenuItem from '@material-ui/core/MenuItem'
 import { MainTitle } from 'cozy-ui/transpiled/react/Text'
+import { Link } from 'react-router-dom'
 
 import Add from './add'
 import query from './query'
@@ -17,27 +18,16 @@ import HeaderMenu from '../header_menu.jsx'
 
 import icon from '../../assets/icons/doc.svg'
 
-import { getEditUrl } from '../../lib/docserve'
-
 const Item = props => {
-  const onClick = useCallback(
-    async e => {
-      e.preventDefault()
-      const url = await getEditUrl(props.doc)
-      document.location = url
-    },
-    [props.doc.id, props.doc.title]
-  )
-
   return (
     <div className="doc-item">
       <Icon icon={icon} width={32} height={32} className="doc-icon" />
-      <a onClick={onClick} className="doc-link">
+      <Link to={`/d/${props.doc.ext}/${props.doc.id}`} className="doc-link">
         <ListItemText
           primaryText={titleWithDefault(props.doc)}
           secondaryText="/Documents/2019/demo"
         />
-      </a>
+      </Link>
     </div>
   )
 }
