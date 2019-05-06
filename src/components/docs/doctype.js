@@ -1,1 +1,1 @@
-export default 'io.cozy.office'
+export default 'io.cozy.office.documents'

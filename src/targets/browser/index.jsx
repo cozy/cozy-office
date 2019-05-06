@@ -7,6 +7,7 @@ import CozyClient, { CozyProvider } from 'cozy-client'
 import { render } from 'react-dom'
 import { I18n } from 'cozy-ui/react/I18n'
 import { schema } from 'components/docs'
+import { getPublicName } from 'lib/docserve'
 
 let appLocale
 const renderApp = function(client) {
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const appIcon = getDataOrDefault(
     data.cozyIconPath,
-    require('../vendor/assets/icon.svg')
+    require('../vendor/assets/doc.svg')
   )
 
   const appNamePrefix = getDataOrDefault(
@@ -84,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
     lang: appLocale,
     replaceTitleOnMobile: true
   })
+
+  getPublicName(client)
 
   renderApp(client)
 })

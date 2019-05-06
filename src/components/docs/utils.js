@@ -6,9 +6,7 @@ export const defaultTitle = doc => {
 }
 
 export const titleWithDefault = (doc, fallback = defaultTitle) => {
-  return (
-    doc.title || (fallback instanceof Function ? fallback(doc) : fallback)
-  )
+  return doc.title || (fallback instanceof Function ? fallback(doc) : fallback)
 }
 
 export default { defaultTitle, titleWithDefault }

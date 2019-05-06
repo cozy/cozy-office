@@ -45,23 +45,16 @@
     "stylint": "1.5.9"
   },
   "dependencies": {
-    "@atlaskit/editor-core": "^106.1.1",
-    "@atlaskit/media-core": "^29.0.1",
-    "@atlaskit/media-editor": "^31.0.1",
-    "bufferutil": "^4.0.1",
+    "@material-ui/core": "^3.9.3",
     "cozy-bar": "6.12.0",
     "cozy-client": "6.16.0",
     "cozy-scripts": "1.13.0",
-    "cozy-ui": "17.6.0",
+    "cozy-ui": "^19.29.0",
     "eslint-config-cozy-app": "1.1.8",
-    "lodash.debounce": "^4.0.8",
     "react": "16.8.1",
     "react-dom": "16.8.1",
     "react-intl": "^2.8.0",
     "react-router-dom": "4.3.1",
-    "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0",
-    "utf-8-validate": "^5.0.2",
-    "uws": "10.148.1"
+    "uuid": "^3.3.2"
   }
 }

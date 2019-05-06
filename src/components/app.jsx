@@ -1,10 +1,14 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
 import { Route, Switch, HashRouter } from 'react-router-dom'
-import { Layout, Main, Content } from 'cozy-ui/react/Layout'
-import { Sprite as IconSprite } from 'cozy-ui/react/Icon'
 
-import { List, Editor } from './docs'
+import 'cozy-ui/dist/cozy-ui.min.css'
+import 'cozy-ui/transpiled/react/stylesheet.css'
+
+import { Layout, Main, Content } from 'cozy-ui/transpiled/react/Layout'
+import { Sprite as IconSprite } from 'cozy-ui/transpiled/react/Icon'
+
+import { List } from './docs'
 
 const App = () => (
   //
@@ -13,7 +17,6 @@ const App = () => (
       <Main>
         <Content className="app-content">
           <Switch>
-            <Route path="/d/:id" component={Editor} />
             <Route path="/" component={List} />
           </Switch>
         </Content>
