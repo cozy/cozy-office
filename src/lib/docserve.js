@@ -28,7 +28,7 @@ function getInstance() {
 export async function getEditUrl(doc) {
   const instance = getInstance()
   const fileName = doc.fileName
-  const backUrl = location.toString()
+  const backUrl = location.origin + "/#/"
   const userid = instance
   const name = await getPublicName()
   const title = titleWithDefault(doc) + '.' + doc.ext

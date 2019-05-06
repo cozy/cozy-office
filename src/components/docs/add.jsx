@@ -40,7 +40,7 @@ class Add extends Component {
     // create on document server
     const meta = await createDocument(id, button.dataset.ext)
     // create on instance's couchdb
-    const { data: doc } = await this.props.client.create(doctype, meta)
+    const { data: doc } = await this.props.client.create(doctype, {_id: meta.file, ...meta} )
     this.setState(() => ({
       isWorking: false
     }))
