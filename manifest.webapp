@@ -1,9 +1,9 @@
 {
   "name": "Cozy Document",
-  "slug": "document",
+  "slug": "documents",
   "icon": "doc.svg",
   "categories": [],
-  "version": "1.0.7",
+  "version": "1.0.8",
   "licence": "AGPL-3.0",
   "editor": "",
   "source": "https://github.com/cozy/cozy-office.git@build",
@@ -27,11 +27,11 @@
       ]
     },
     "office": {
-      "description": "Office Documents",
+      "description": "Office documents",
       "type": "io.cozy.office.documents"
     },
-    "settings": {
-      "description": "Required to manage your settings",
+    "Settings": {
+      "description": "Settings, to fetch the public name",
       "type": "io.cozy.settings",
       "verbs": [
         "GET"
