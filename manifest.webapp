@@ -1,0 +1,31 @@
+{
+  "name": "Cozy PPTx",
+  "slug": "pptx",
+  "icon": "pptx.svg",
+  "permissions": {
+    "apps": {
+      "description": "Required by the cozy-bar to display the icons of the apps",
+      "type": "io.cozy.apps",
+      "verbs": [
+        "GET"
+      ]
+    },
+    "office": {
+      "description": "Office presentations",
+      "type": "io.cozy.office.pptx"
+    },
+    "Settings": {
+      "description": "Settings, to fetch the public name",
+      "type": "io.cozy.settings",
+      "verbs": [
+        "GET"
+      ]
+    }
+  },
+  "locales": {
+    "en": {}
+  },
+  "langs": [
+    "en"
+  ]
+}
