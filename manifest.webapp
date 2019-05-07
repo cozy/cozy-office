@@ -1,6 +1,6 @@
 {
-  "name": "Cozy Document",
-  "slug": "documents",
+  "name": "Cozy Docx",
+  "slug": "docx",
   "icon": "doc.svg",
   "categories": [],
   "version": "1.0.8",
