@@ -18,7 +18,7 @@ import HeaderMenu from '../header_menu.jsx'
 
 import docx from '../../assets/icons/docx.svg'
 import xlsx from '../../assets/icons/xlsx.svg'
-import pptx from '../../assets/icons/xlsx.svg'
+import pptx from '../../assets/icons/pptx.svg'
 
 import configData from '../../config.json'
 
