@@ -54,6 +54,8 @@ mobile/fastlane/Error*.png
 mobile/fastlane/Preview.html
 mobile/Preview.html
 
+# Generate
+src/targets/vendor/assets/office*.*
 
 # Default
 # /!\ KEEP THIS SECTION THE LAST ONE
