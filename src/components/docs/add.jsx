@@ -12,6 +12,8 @@ import doctype from './doctype'
 
 import { createDocument } from '../../lib/docserve'
 
+import configData from '../../config.json'
+
 class Add extends Component {
   constructor(props, context) {
     super(props, context)
@@ -59,7 +61,7 @@ class Add extends Component {
           type="submit"
           busy={isWorking}
           icon="plus"
-          data-ext="docx"
+          data-ext={configData.ext}
           label="ajouter un document"
           extension="narrow"
         />

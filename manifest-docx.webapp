@@ -1,25 +1,21 @@
 {
-  "name": "Cozy XLSx",
-  "slug": "xlsx",
-  "icon": "xlsx.svg",
+  "name": "Cozy Docx",
+  "slug": "docx",
+  "icon": "docx.svg",
   "permissions": {
     "apps": {
       "description": "Required by the cozy-bar to display the icons of the apps",
       "type": "io.cozy.apps",
-      "verbs": [
-        "GET"
-      ]
+      "verbs": ["GET"]
     },
     "office": {
-      "description": "Office tables",
-      "type": "io.cozy.office.xlsx"
+      "description": "Office documents",
+      "type": "io.cozy.office.docx"
     },
     "Settings": {
       "description": "Settings, to fetch the public name",
       "type": "io.cozy.settings",
-      "verbs": [
-        "GET"
-      ]
+      "verbs": ["GET"]
     }
   }
 }

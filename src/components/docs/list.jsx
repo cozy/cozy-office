@@ -16,12 +16,23 @@ import { titleWithDefault } from './utils'
 
 import HeaderMenu from '../header_menu.jsx'
 
-import icon from '../../assets/icons/doc.svg'
+import docx from '../../assets/icons/docx.svg'
+import xlsx from '../../assets/icons/xlsx.svg'
+import pptx from '../../assets/icons/xlsx.svg'
+
+import configData from '../../config.json'
+
+const icons = { docx, xlsx, pptx }
 
 const Item = props => {
   return (
     <div className="doc-item">
-      <Icon icon={icon} width={32} height={32} className="doc-icon" />
+      <Icon
+        icon={icons[configData.ext]}
+        width={32}
+        height={32}
+        className="doc-icon"
+      />
       <Link to={`/d/${props.doc.ext}/${props.doc.id}`} className="doc-link">
         <ListItemText
           primaryText={titleWithDefault(props.doc)}
