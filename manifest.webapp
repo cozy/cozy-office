@@ -1,23 +1,7 @@
 {
   "name": "Cozy Docx",
   "slug": "docx",
-  "icon": "doc.svg",
-  "categories": [],
-  "version": "1.0.8",
-  "licence": "AGPL-3.0",
-  "editor": "",
-  "source": "https://github.com/cozy/cozy-office.git@build",
-  "developer": {
-    "name": "edas",
-    "url": "https://eric.daspet.name/"
-  },
-  "routes": {
-    "/": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
-    }
-  },
+  "icon": "docx.svg",
   "permissions": {
     "apps": {
       "description": "Required by the cozy-bar to display the icons of the apps",
@@ -28,7 +12,7 @@
     },
     "office": {
       "description": "Office documents",
-      "type": "io.cozy.office.documents"
+      "type": "io.cozy.office.docx"
     },
     "Settings": {
       "description": "Settings, to fetch the public name",
