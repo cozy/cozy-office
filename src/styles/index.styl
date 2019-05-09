@@ -121,5 +121,18 @@ div[role=tooltip] {
 iframe.editor {
     flex-grow: 1;
 }
+html, body { height: 100% !important}
 
+div[role=application],
+div[role=application] > div,
+div[role=application] main,
+div[role=application] main > [role=main] {
+    display: flex;
+}
+
+@media (max-width: 64em) {
+    div[role=application] > div {
+        padding-top: 48px;
+    }
+}
 // @stylint on
